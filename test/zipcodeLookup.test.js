@@ -14,6 +14,15 @@ describe('zipcode lookup tests', () => {
     expect(result.longitude).to.equal("-71.511");
   });
 
+  it('gets the data for postal code T4A', () => {
+    const result = zipcodes.lookup("T4A");
+    expect(result.zip).to.equal("T4A");
+    expect(result.city).to.equal("Airdrie East");
+    expect(result.state).to.equal("AB");
+    expect(result.latitude).to.equal("51.2733");
+    expect(result.longitude).to.equal("-113.9909");
+  });
+
   it(' a bad zipcode is sent in', () => {
     const result = zipcodes.lookup("ABCDE");
     expect(result).to.equal(undefined);

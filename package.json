@@ -1,22 +1,24 @@
 {
-  "name": "zipcodes-perogi",
-  "description": "A zipcode lookup package with the latest zipcode information updated every month.",
-  "version": "1.4.201908",
-  "author": "S Perreault <github@perogi.org>",
+  "name": "zipcodes-perogi-us-ca",
+  "description": "A zipcode lookup package for USA and Canada.",
+  "version": "1.0.0",
+  "author": "Big Dune <info@bigdune.net>",
   "keywords": [
     "zipcode",
     "US",
+    "postal code",
+    "Canada",
     "USPS",
-    "perogi"
+    "bigdune"
   ],
   "bugs": {
-    "web": "https://github.com/perogi/zipcodes-perogi/issues"
+    "web": "https://github.com/bigdune/zipcodes-perogi/issues"
   },
   "main": "./lib/index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/perogi/zipcodes-perogi"
+    "url": "https://github.com/bigdune/zipcodes-perogi"
   },
   "scripts": {
     "stryker": "node_modules/.bin/stryker run stryker.conf.js",
