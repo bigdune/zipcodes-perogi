@@ -1,22 +1,14 @@
 #Zip Code Lookup
-[![Build Status](https://travis-ci.org/perogi/zipcodes-perogi.svg?branch=master)](https://travis-ci.org/perogi/zipcodes-perogi)
 
 A localized (flatfile) zipcode lookup.
 
-**Sadly the development of this API has been postponed due to the increase in price to get an updated zipcode list on a monthly basis.**
-I'm currently coding a solution that will use an only zip code lookup to pull in the data. I hope to finish this up during the Christmas break.  Thanks!
-
-Zipcode data is taken from a new more up-to-date zipcode source compared to [davglass'](https://github.com/davglass/zipcodes) project. 
-This source has monthly updates for zip code data. For example: June 2019 data added 2 zip codes.
-
-## Other Differences
-This application only has the default zip code information and only for the 50 US states and Washington, DC.  
+This is a fork of [perogi's](https://github.com/perogi/zipcodes-perogi) project. 
+The only difference is that this version includes Canadian postal codes in the database. Canadian data was sourced from [davglass'](https://github.com/davglass/zipcodes) project.
+ 
 
 ## Last Change Log
-Version 1.3.201908
-1 change from July 2019 - Removal of one zipcode
-npm audit: found 0 vulnerabilities 
-Stryker mutation tests.  Passed 100.0  0 Survived
+Version 1.0.0
+Initial Release
 
 ## Usage
     var zipcodes = require('zipcodes-perogi');
@@ -124,7 +116,7 @@ Stryker mutation tests.  Passed 100.0  0 Survived
 The original CSV file that I am using for this data is not included in this repo due to licensing, but I did wrap up
 the best way to get the data and how to convert it into the format that this module uses.
 
-Note: This is a fork of [davglass' excellent zipcode lookup project](https://github.com/davglass/zipcodes).
+Note: This is a fork of [perogi's excellent zipcode lookup project](https://github.com/perogi/zipcodes-perogi).
 
 ## Historical Change Log
 See CHANGE_LOG.md file
